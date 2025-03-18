@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Electronics</title>
+    <link rel="stylesheet" href="
+    electonics.css">
+</head>
+<body>
+   
+    <header>
+        <div class="top-bar">
+            <div class="logo">a_baey<span>.com</span></div>
+            <div class="account-options">
+                <a href="#">YOUR ACCOUNT</a> |
+                <a href="#">HELP</a> |
+                <a href="#">SELL ITEMS</a>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+           <ul>
+                <li><a href="mainbody.html">Home</a></li>
+                <li><a href="toy90.html">toys</a></li>
+                <li><a href="fashion.html">fashion</a></li>
+                <li><a href="electronics.html">electronics</a></li>
+           </ul>
+    
+    <div class="container" id="products">
+            <div class="product">
+            <img src="PS4.1.jpeg" alt="PlayStation" >
+            <h3>PlayStation</h3>
+            <p>$299</p>
+            <button onclick="addToCart('PlayStation', 299)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Nint.1.jpeg" alt="Nintendo Game Boy">
+            <h3>Nintendo Game Boy</h3>
+            <p>$149</p>
+            <button onclick="addToCart('Nintendo Game Boy', 149)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Nokia.1.jpeg" alt="Nokia Mobile">
+            <h3>Nokia Mobile</h3>
+            <p>$99</p>
+            <button onclick="addToCart('Nokia Mobile', 99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Win.1.jpeg" alt="Windows Laptop">
+            <h3>Windows Laptop</h3>
+            <p>$199</p>
+            <button onclick="addToCart('Windows Laptop', 199)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="appl.1.jpeg" alt="Apple iMac">
+            <h3>Apple iMac</h3>
+            <p>$1299</p>
+            <button onclick="addToCart('Apple iMac', 1299)">Add to Cart</button>
+        </div>
+    </div>
+    
+    <div class="cart" id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0</span></p>
+    </div>
+    
+    <script>
+        let total = 0;
+        function addToCart(item, price) {
+            const cartItems = document.getElementById("cart-items");
+            const li = document.createElement("li");
+            li.textContent = `${item} - $${price}`;
+            cartItems.appendChild(li);
+            total += price;
+            document.getElementById("total").textContent = total;
+        }
+    </script>
+</body>
+</html>
