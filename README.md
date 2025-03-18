@@ -1,4 +1,18 @@
-t, use Netlify)
+# problemstatement2
+
+# DEVX: CODE. CREATE. CONQUER - Event organized by IETE Amrita Club
+
+# TEAM NAME: main_character_energy.js
+
+
+website:
+https://a-bay-psi.vercel.app/index.html
+
+# TECH STACK USED: HTML, CSS and JAVASCRIPT
+
+# SET-UP INSTRUCTIONS :
+
+DEPLOYED USING VERCEL
 
 # FEATURES IMPLEMENTED:
 in each style
